@@ -1,0 +1,15 @@
+.product-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $portfolio-cards-background;
+  opacity: 1;
+  transform: translateY(0%);
+  transition: $transition;
+}
+
+.portfolio-link:hover .product-overlay,
+.portfolio-link:focus .product-overlay {
+  transform: translateY(-100%);
+  opacity: 1;
+}

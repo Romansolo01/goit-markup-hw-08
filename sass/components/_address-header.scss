@@ -1,0 +1,76 @@
+.address {
+  margin-left: auto;
+  list-style: none;
+  display: inline-flex;
+
+  &-list {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.address-link-mail {
+  display: inline-flex;
+  margin-right: 50px;
+  align-items: center;
+  color: $secondary-text-color;
+  fill: $secondary-text-color;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: $transition;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+
+  &-item {
+    align-items: center;
+  }
+}
+
+.envelope {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+
+  &-item {
+    align-items: center;
+  }
+}
+
+.address-link-phone {
+  display: inline-flex;
+  align-items: center;
+  color: $secondary-text-color;
+  fill: $secondary-text-color;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: $transition;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}

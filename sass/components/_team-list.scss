@@ -1,0 +1,25 @@
+.team-images {
+  margin-bottom: 30px;
+}
+
+.team-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.team-item {
+  max-width: 270px;
+  max-height: 428px;
+  background-color: $primary-background-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: $shadow;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

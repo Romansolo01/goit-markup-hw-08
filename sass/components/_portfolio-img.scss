@@ -1,0 +1,21 @@
+.portfolio-img {
+  max-width: 100%;
+  border: none;
+  vertical-align: bottom;
+}
+
+.img-thumb {
+  overflow: hidden;
+  position: relative;
+  width: 370px;
+  height: 294px;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: $portfolio-cards-background;
+    opacity: 0;
+  }
+}

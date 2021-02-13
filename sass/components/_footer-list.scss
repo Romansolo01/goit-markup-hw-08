@@ -1,0 +1,44 @@
+.footer-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.address-location,
+.address-location:visited {
+  display: block;
+  margin-bottom: 9px;
+  color: $white-text-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.address-footer-mail,
+.address-footer-mail:visited {
+  margin-bottom: 9px;
+  display: block;
+  color: $footer-address-text-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.address-footer-phone,
+.address-footer-phone:visited {
+  display: block;
+  color: $footer-address-text-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}

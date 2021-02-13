@@ -1,0 +1,11 @@
+.footer {
+  background-color: $background-top-footer;
+
+  &-info {
+    display: flex;
+  }
+
+  &-address {
+    height: 252px;
+  }
+}
