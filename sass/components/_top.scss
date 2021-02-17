@@ -1,0 +1,27 @@
+.top {
+  height: 400px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/top-img.jpg);
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+
+  &-title {
+    padding-top: 200px;
+    padding-left: 236px;
+    padding-right: 236px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: $white-text-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
