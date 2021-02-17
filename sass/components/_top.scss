@@ -1,6 +1,7 @@
 .top {
   height: 400px;
   max-width: 1600px;
+  margin-bottom: 60px;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.4),
@@ -13,9 +14,10 @@
   background-repeat: no-repeat;
 
   &-title {
-    padding-top: 200px;
-    padding-left: 236px;
-    padding-right: 236px;
+    display: inline-block;
+    align-items: center;
+    max-width: 360px;
+    padding-top: 118px;
     margin-top: 0;
     margin-bottom: 30px;
     color: $white-text-color;

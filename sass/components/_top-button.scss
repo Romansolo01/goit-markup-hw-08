@@ -1,0 +1,19 @@
+.order,
+.order:visited {
+  display: inline-block;
+  text-align: center;
+  min-width: 200px;
+  height: 50px;
+  background-color: $accent-color;
+  color: $white-text-color;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+}
+
+.order-button {
+  margin-bottom: 118px;
+}
