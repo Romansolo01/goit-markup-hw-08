@@ -1,14 +1,16 @@
 .top {
   height: 400px;
+  max-width: 1600px;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url(../images/top-img.jpg);
-  background-size: contain;
+    url(../images/header.jpg);
+  background-size: cover;
   background-position: center;
   text-align: center;
+  background-repeat: no-repeat;
 
   &-title {
     padding-top: 200px;
