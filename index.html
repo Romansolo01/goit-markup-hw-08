@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Веб-Студия</title>
     <link
       rel="stylesheet"
@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
   <body>
@@ -28,39 +28,68 @@
               <use href="./images/symbol.svg#webstudio"></use>
             </svg>
           </a>
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <a class="menu-link-studio" href="./index.html">Студия</a>
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-link-studio-portfolio" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="menu-list-item">
-              <a class="menu-link-studio-contacts" href="#">Контакты</a>
-            </li>
-          </ul>
-          <address class="address">
-            <ul class="address-list">
-              <li class="envelope-item">
-                <a class="address-link-mail" href="mailto:info@devstudio.com"
-                  ><svg class="envelope">
-                    <use href="./images/symbol.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="phone-item">
-                <a class="address-link-phone" href="tel:+380961111111"
-                  ><svg class="phone">
-                    <use href="./images/symbol.svg#smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
+          <button
+            class="menu-button is-open"
+            data-menu-button
+            aria-expanded="false"
+            type="button"
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/symbol.svg#close-mobile"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/symbol.svg#menu-mobile"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container" data-menu>
+            <div class="navigation">
+              <ul class="menu-list">
+                <li class="menu-list-item">
+                  <a class="menu-link-studio" href="./index.html">Студия</a>
+                </li>
+                <li class="menu-list-item">
+                  <a class="menu-link-studio-portfolio" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="menu-list-item">
+                  <a class="menu-link-studio-contacts" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts">
+              <address class="address">
+                <ul class="address-list">
+                  <li class="phone-item">
+                    <a class="address-link-phone" href="tel:+380961111111"
+                      ><svg class="phone">
+                        <use href="./images/symbol.svg#smartphone"></use>
+                      </svg>
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="envelope-item">
+                    <a
+                      class="address-link-mail"
+                      href="mailto:info@devstudio.com"
+                      ><svg class="envelope">
+                        <use href="./images/symbol.svg#envelope"></use>
+                      </svg>
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -503,44 +532,9 @@
         </form>
       </div>
     </div>
-    <script>
-      const refs = {
-        openModalBtn: document.querySelector("[data-open-modal]"),
-        closeModalBtn: document.querySelector("[data-close-modal]"),
-        backdrop: document.querySelector("[data-backdrop]"),
-      };
-
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-
-      refs.backdrop.addEventListener("click", logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle("is-hidden");
-      }
-
-      function logBackdropClick() {
-        console.log("Это клик в бекдроп");
-      }
-    </script>
     <!-- /Модальное окно -->
-    <!-- Форма подписки -->
-    <script>
-      (() => {
-        document
-          .querySelector(".js-speaker-form")
-          .addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-
-            e.currentTarget.reset();
-          });
-      })();
-    </script>
-
-    <!-- /Форма подписки -->
+    <script src="js/modal.js"></script>
+    <script src="./js/subscribe.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

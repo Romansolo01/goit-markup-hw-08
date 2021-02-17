@@ -1,0 +1,115 @@
+.menu-list {
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: 40px;
+
+  &-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-link-studio-portfolio,
+.menu-link-studio-portfolio:visited {
+  display: block;
+  width: 78px;
+  position: relative;
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: 250ms $transition;
+}
+
+.menu-link-studio-portfolio:hover,
+.menu-link-studio-portfolio:active,
+.menu-link-studio-portfolio:focus {
+  color: $accent-color;
+}
+
+.menu-link-studio-contacts,
+.menu-link-studio-contacts:visited {
+  display: block;
+  position: relative;
+  width: 68px;
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: 250ms $transition;
+}
+
+.menu-link-studio-contacts:hover,
+.menu-link-studio-contacts:active,
+.menu-link-studio-contacts:focus {
+  color: $accent-color;
+}
+
+.menu-link-studio {
+  display: block;
+  width: 48px;
+  position: relative;
+  color: $accent-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.menu-link-portfolio-studio,
+.menu-link-portfolio-studio:visited {
+  display: block;
+  width: 48px;
+  position: relative;
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  transition: 250ms $transition;
+}
+
+.menu-link-portfolio-studio:hover,
+.menu-link-portfolio-studio:active,
+.menu-link-portfolio-studio:focus {
+  color: $accent-color;
+}
+
+.menu-link-portfolio-contacts,
+.menu-link-portfolio-contacts:visited {
+  display: block;
+  position: relative;
+  width: 68px;
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: 250ms $transition;
+}
+
+.menu-link-portfolio-contacts:hover,
+.menu-link-portfolio-contacts:active,
+.menu-link-portfolio-contacts:focus {
+  color: $accent-color;
+}
+
+.menu-link-portfolio {
+  display: block;
+  width: 78px;
+  position: relative;
+  color: $accent-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}

@@ -1,0 +1,7 @@
+.menu {
+  height: 80px;
+
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
+}
