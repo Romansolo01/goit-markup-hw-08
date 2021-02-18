@@ -1,0 +1,37 @@
+.footer-network {
+  display: block;
+}
+
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text-color;
+}
+
+.footer-network-button {
+  display: inline-flex;
+  margin-bottom: 60px;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $white-text-color;
+  background-color: $icons-footer-color;
+  transition: 250ms $transition;
+}
+
+.footer-network-button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-network-button:hover,
+.footer-network-button:focus,
+.footer-network-button:active {
+  background-color: $accent-color;
+  fill: $white-text-color;
+}
