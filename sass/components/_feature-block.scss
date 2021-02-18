@@ -1,11 +1,9 @@
-.feature-svg {
+.feature-block {
   display: block;
-  max-width: 450px;
-  height: 120px;
+  text-align: center;
   padding-top: 25px;
-  padding-left: 190px;
-  padding-right: 190px;
-  padding-bottom: 25px;
+  width: auto;
+  height: 120px;
   margin-bottom: 30px;
   background-color: $secondary-background-color;
 }
