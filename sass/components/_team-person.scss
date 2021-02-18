@@ -1,7 +1,7 @@
 .person-title {
   margin-top: 0;
   margin-bottom: 10px;
-  color: #212121;
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
@@ -13,14 +13,10 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 16px;
-  color: #757575;
+  color: $secondary-text-color;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.person-text:last-child {
-  margin-bottom: 0;
 }

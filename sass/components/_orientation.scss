@@ -1,7 +1,7 @@
 .orientation-title {
   margin-top: 0;
   margin-bottom: 50px;
-  color: #212121;
+  color: $primary-text-color;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -17,21 +17,19 @@
   padding-right: 0;
   max-height: 294px;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   display: none;
-}
 
-.orientation-list-item {
-  display: block;
-  position: relative;
-  display: none;
-}
+  &-item {
+    display: block;
+    position: relative;
+    display: none;
+  }
 
-.orientation-list-item:not(:last-child) {
-  margin-right: 30px;
-  display: none;
+  &-item:not(:last-child) {
+    margin-right: 30px;
+    display: none;
+  }
 }
 
 .orientation-box {
@@ -41,7 +39,7 @@
   text-align: center;
   width: 370px;
   height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: $orientation-box-color;
   display: none;
 }
 
@@ -53,6 +51,6 @@
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white-text-color;
   display: none;
 }
