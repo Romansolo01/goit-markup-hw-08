@@ -1,5 +1,6 @@
 .menu {
   height: 80px;
+  display: block;
 
   @media screen and (max-width: 767px) {
     height: 60px;
