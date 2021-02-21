@@ -1,6 +1,8 @@
 .menu {
   height: 80px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   @media screen and (max-width: 767px) {
     height: 60px;

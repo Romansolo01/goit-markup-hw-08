@@ -1,0 +1,30 @@
+.menu-network {
+  &-list {
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &-item {
+    font-style: $font-style-global;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+
+    color: $accent-color;
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu-svg {
+  display: inline-block;
+  vertical-align: middle;
+  border: 0.2px solid $border-input;
+  margin-left: 10px;
+  margin-right: 10px;
+}
